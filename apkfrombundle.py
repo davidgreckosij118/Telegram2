@@ -6,3 +6,6 @@ def compareFiles(first, second):
         firstBytes = first.read(4096)
 if firstBytes != secondBytes:
             return False
+
+        if firstBytes == b"" and secondBytes == b"":
+            break

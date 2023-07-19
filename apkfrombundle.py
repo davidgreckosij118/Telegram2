@@ -9,3 +9,7 @@ if firstBytes != secondBytes:
 
         if firstBytes == b"" and secondBytes == b"":
             break
+
+    return True
+
+def remove_prefix(text, prefix):

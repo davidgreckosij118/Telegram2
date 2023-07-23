@@ -19,3 +19,6 @@ def remove_prefix(text, prefix):
 
 def compareApkFromBundle(bundle, apk):
     FILES_TO_IGNORE = ["resources.arsc", "stamp-cert-sha256"]
+
+    apkZip = ZipFile(apk, 'r')
+    bundleZip = ZipFile(bundle, 'r')

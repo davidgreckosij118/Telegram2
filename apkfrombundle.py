@@ -22,3 +22,5 @@ def compareApkFromBundle(bundle, apk):
 
     apkZip = ZipFile(apk, 'r')
     bundleZip = ZipFile(bundle, 'r')
+
+    firstList = list(filter(lambda info: info.filename not in FILES_TO_IGNORE, apkZip.infolist()))

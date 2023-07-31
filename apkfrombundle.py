@@ -36,3 +36,4 @@ def compareApkFromBundle(bundle, apk):
 
         found = False
    for bundleInfo in secondList:
+ fileName = bundleInfo.filename

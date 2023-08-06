@@ -46,3 +46,5 @@ if (fileName.startswith("BUNDLE-METADATA")):
  if fileName == apkInfo.filename:
  found = True
                 firstFile = apkZip.open(apkInfo, 'r')
+ secondFile = bundleZip.open(bundleInfo, 'r')
+                if compareFiles(firstFile, secondFile) != True:

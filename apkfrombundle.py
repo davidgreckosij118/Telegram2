@@ -50,3 +50,6 @@ if (fileName.startswith("BUNDLE-METADATA")):
                 if compareFiles(firstFile, secondFile) != True:
  print("APK file %s does not match" % apkInfo.filename)
                     return False
+    break
+
+        if found == False:

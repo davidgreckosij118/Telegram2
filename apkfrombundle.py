@@ -55,3 +55,5 @@ if (fileName.startswith("BUNDLE-METADATA")):
         if found == False:
  print("file %s not found in APK" % apkInfo.filename)
             return False
+
+    return True

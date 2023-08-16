@@ -65,3 +65,4 @@ if __name__ == '__main__':
 
 
     if sys.argv[1] == sys.argv[2] or compareApkFromBundle(sys.argv[1], sys.argv[2]) == True:
+ print("APK from bundle!")

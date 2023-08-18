@@ -51,20 +51,3 @@ if (fileName.startswith("BUNDLE-METADATA")):
  print("APK file %s does not match" % apkInfo.filename)
                     return False
     break
-
-        if found == False:
- print("file %s not found in APK" % apkInfo.filename)
-            return False
-
-    return True
-
-if __name__ == '__main__':
- if len(sys.argv) != 3:
-     print("Usage: apkfrombundle <pathToBundle> <pathToApk>")
- sys.exit(1)
-
-
-    if sys.argv[1] == sys.argv[2] or compareApkFromBundle(sys.argv[1], sys.argv[2]) == True:
- print("APK from bundle!")
-else:
-        print("APK has difference!")

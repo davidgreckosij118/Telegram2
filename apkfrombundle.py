@@ -51,3 +51,5 @@ if (fileName.startswith("BUNDLE-METADATA")):
  print("APK file %s does not match" % apkInfo.filename)
                     return False
     break
+
+    return True

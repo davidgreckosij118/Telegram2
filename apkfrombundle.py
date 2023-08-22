@@ -53,3 +53,5 @@ if (fileName.startswith("BUNDLE-METADATA")):
     break
 
     return True
+
+if __name__ == '__main__':

@@ -56,3 +56,4 @@ if (fileName.startswith("BUNDLE-METADATA")):
 
 if __name__ == '__main__':
   if len(sys.argv) != 3:
+   print("Usage: apkfrombundle <pathToBundle> <pathToApk>")

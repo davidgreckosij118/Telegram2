@@ -8,13 +8,3 @@ if firstBytes != secondBytes:
             return False
 
         if firstBytes == b"" and secondBytes == b"":
-            break
-
-    return True
-
-def remove_prefix(text, prefix):
-  if text.startswith(prefix):
-   return text[len(prefix):]
-    return text
-
- print("APK has difference!")

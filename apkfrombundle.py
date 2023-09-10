@@ -8,3 +8,6 @@ if firstBytes != secondBytes:
             return False
 
         if firstBytes == b"" and secondBytes == b"":
+   break
+
+    return True

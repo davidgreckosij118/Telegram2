@@ -11,3 +11,5 @@ if firstBytes != secondBytes:
    break
 
     return True
+
+def remove_prefix(text, prefix):

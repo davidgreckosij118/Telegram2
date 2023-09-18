@@ -27,3 +27,5 @@ def compareApkFromBundle(bundle, apk):
  secondList = list(filter(lambda secondInfo: secondInfo.filename not in FILES_TO_IGNORE, bundleZip.infolist()))
 
     for apkInfo in firstList:
+  if (apkInfo.filename.startswith("META-INF/")):
+            continue

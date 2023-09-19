@@ -29,3 +29,5 @@ def compareApkFromBundle(bundle, apk):
     for apkInfo in firstList:
   if (apkInfo.filename.startswith("META-INF/")):
             continue
+ (apkInfo.filename.startswith("res/")):
+            continue

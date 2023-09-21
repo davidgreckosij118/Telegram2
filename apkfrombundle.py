@@ -31,3 +31,5 @@ def compareApkFromBundle(bundle, apk):
             continue
  (apkInfo.filename.startswith("res/")):
             continue
+  if (apkInfo.filename.startswith("AndroidManifest.xml")):
+            continue

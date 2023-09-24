@@ -37,3 +37,5 @@ def compareApkFromBundle(bundle, apk):
         found = False
         for bundleInfo in secondList:
             fileName = bundleInfo.filename
+ fileName = remove_prefix(fileName, "base/root/")
+            fileName = remove_prefix(fileName, "base/dex/")

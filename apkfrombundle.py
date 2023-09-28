@@ -45,3 +45,5 @@ def compareApkFromBundle(bundle, apk):
                 fileName = "META-INF" + remove_prefix(fileName, "BUNDLE-METADATA/")
 if fileName == apkInfo.filename:
                 found = True
+  firstFile = apkZip.open(apkInfo, 'r')
+                secondFile = bundleZip.open(bundleInfo, 'r')

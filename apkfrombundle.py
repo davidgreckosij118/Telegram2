@@ -49,3 +49,8 @@ if fileName == apkInfo.filename:
                 secondFile = bundleZip.open(bundleInfo, 'r')
  if compareFiles(firstFile, secondFile) != True:
                     print("APK file %s does not match" % apkInfo.filename)
+ return False
+                break
+
+        if found == False:
+            print("file %s not found in APK" % apkInfo.filename)

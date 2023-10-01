@@ -54,3 +54,9 @@ if fileName == apkInfo.filename:
 
         if found == False:
             print("file %s not found in APK" % apkInfo.filename)
+  return False
+
+    return True
+
+if __name__ == '__main__':
+    if len(sys.argv) != 3:

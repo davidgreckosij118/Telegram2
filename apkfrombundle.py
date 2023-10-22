@@ -17,3 +17,5 @@ def remove_prefix(text, prefix):
         return text[len(prefix):]
     return text
 
+def compareApkFromBundle(bundle, apk):
+    FILES_TO_IGNORE = ["resources.arsc", "stamp-cert-sha256"]

@@ -40,3 +40,5 @@ def compareApkFromBundle(bundle, apk):
  fileName = remove_prefix(fileName, "base/root/")
   fileName = remove_prefix(fileName, "base/dex/")
  fileName = remove_prefix(fileName, "base/manifest/")
+ fileName = remove_prefix(fileName, "base/")
+            if (fileName.startswith("BUNDLE-METADATA")):

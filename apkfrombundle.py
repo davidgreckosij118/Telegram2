@@ -46,3 +46,4 @@ def compareApkFromBundle(bundle, apk):
   if fileName == apkInfo.filename:
                 found = True
                 firstFile = apkZip.open(apkInfo, 'r')
+ secondFile = bundleZip.open(bundleInfo, 'r')

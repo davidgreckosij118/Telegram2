@@ -54,3 +54,4 @@ def compareApkFromBundle(bundle, apk):
 
         if found == False:
             print("file %s not found in APK" % apkInfo.filename)
+  return False

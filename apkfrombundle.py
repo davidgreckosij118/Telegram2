@@ -13,3 +13,5 @@ if firstBytes != secondBytes:
     return True
 
 def remove_prefix(text, prefix):
+  if text.startswith(prefix):
+        return text[len(prefix):]

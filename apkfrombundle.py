@@ -15,3 +15,6 @@ if firstBytes != secondBytes:
 def remove_prefix(text, prefix):
   if text.startswith(prefix):
         return text[len(prefix):]
+  return text
+
+def compareApkFromBundle(bundle, apk):

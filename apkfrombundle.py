@@ -29,3 +29,6 @@ bundleZip = ZipFile(bundle, 'r')
     for apkInfo in firstList:
  if (apkInfo.filename.startswith("META-INF/")):
             continue
+ if (apkInfo.filename.startswith("res/")):
+            continue
+        if (apkInfo.filename.startswith("AndroidManifest.xml")):

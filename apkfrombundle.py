@@ -32,3 +32,7 @@ bundleZip = ZipFile(bundle, 'r')
  if (apkInfo.filename.startswith("res/")):
             continue
         if (apkInfo.filename.startswith("AndroidManifest.xml")):
+     continue
+
+        found = False
+        for bundleInfo in secondList:

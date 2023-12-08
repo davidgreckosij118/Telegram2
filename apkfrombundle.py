@@ -52,3 +52,4 @@ bundleZip = ZipFile(bundle, 'r')
  if fileName == apkInfo.filename:
                 found = True
                 firstFile = apkZip.open(apkInfo, 'r')
+ secondFile = bundleZip.open(bundleInfo, 'r')
